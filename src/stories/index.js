@@ -13,6 +13,6 @@ storiesOf('Button', module)
   .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
   .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
 
-storiesOf('ReactRouter3', module)
+storiesOf('ReactRouter', module)
 	.addDecorator(StoryRouter())
-	.add('with rr3 home route', () => <App />)
+	.add('with React Router', () => <App />)
