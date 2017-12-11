@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Router, Route, Link, browserHistory } from 'react-router'
+import { Router, Route, Link } from 'react-router-dom'
+import createHistory from 'history/createBrowserHistory';
 
 class App extends Component {
   render() {
@@ -22,7 +23,7 @@ class App extends Component {
 class Routes extends Component {
 	render() {
 		return (
-			<Router history={browserHistory}>
+			<Router history={createHistory()}>
 				<Route path="/" component={App} />
 			</Router>
 		)
